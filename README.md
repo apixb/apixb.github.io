@@ -1,7 +1,7 @@
 # 项目简介
 
 本项目目前由[wryxmq](http://wryxmq.com) 维护运营 <br>
-邮箱: xbapi@protonmail.com(由于某种原因本邮箱并不时常在线) <br>
+邮箱: apixb@protonmail.com(由于某种原因本邮箱并不时常在线) <br>
 
 ## 外部链接
 
