@@ -1,0 +1,74 @@
+<!DOCTYPE >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>万圣节快乐</title>
+	<link href="static/css/zzsc.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="lantern">
+		<div class="face">
+			<div class="eyes"></div>
+			<div class="mouth"></div>
+		</div>
+	</div>
+	<h1>万圣节快乐<span>HappyHalloween</span></h1>
+	
+	<script>
+		//获取域名?后面url=的值
+		var s0=new URLSearchParams(window.location.href.split('?')[1]).get('s');
+		var url0=new URLSearchParams(window.location.href.split('?')[1]).get('url');
+		var url1="https://apixb.github.io";
+		
+		if(s0==null){
+			s0=5;
+		}
+		if(url0==null){
+			alert("获取失败,请不要禁用js或直接访问本网址.确认后关闭本网页");
+			// 清空当前网页数据
+			document.documentElement.innerHTML = '';
+			// 跳转到百度网页
+			window.location.href = url1;
+		}
+		alert(s0);
+		
+		
+
+		// 网页加载完毕后执行的函数
+        window.onload = function() {
+            // 创建一个显示倒计时的元素
+            var countdownElement = document.createElement('div');
+            countdownElement.style.position = 'fixed';
+            countdownElement.style.bottom = '10px';
+            countdownElement.style.right = '10px';
+            countdownElement.style.backgroundColor = '#000';
+            countdownElement.style.color = '#fff';
+            countdownElement.style.padding = '10px';
+            countdownElement.style.borderRadius = '5px';
+            countdownElement.style.fontFamily = 'Arial, sans-serif';
+            countdownElement.style.fontSize = '18px';
+            countdownElement.style.zIndex = '9999';
+            document.body.appendChild(countdownElement);
+
+            // 设置倒计时的初始值为5
+            var countdown = s0;
+
+            // 更新倒计时的显示
+            function updateCountdown() {
+                countdownElement.innerText = countdown;
+                countdown--;
+            }
+
+            // 每秒更新一次倒计时
+            var countdownInterval = setInterval(function() {
+                updateCountdown();
+
+                // 当倒计时为0时，跳转到
+                if (countdown === 0) {
+                    clearInterval(countdownInterval);
+                    window.location.href = url0;
+                }
+            }, 1000);
+        };
+	</script>
+</body>
+</html>
