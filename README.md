@@ -5,10 +5,10 @@
 
 ## 外部链接
 
-盾牌io：[https://shields.io/badges/static-badge](https://shields.io/badges/static-badge)
-Arya：[https://markdown.lovejade.cn/](https://markdown.lovejade.cn)
-搜狗翻译：[https://fanyi.sogou.com/text](https://fanyi.sogou.com/text)
-DW AI：[https://dawu.life](https://dawu.life)
+盾牌io：[https://shields.io/badges/static-badge](https://shields.io/badges/static-badge)<br>
+Arya：[https://markdown.lovejade.cn/](https://markdown.lovejade.cn)<br>
+搜狗翻译：[https://fanyi.sogou.com/text](https://fanyi.sogou.com/text)<br>
+DW AI：[https://dawu.life](https://dawu.life)<br>
 
 ## 万圣节1--编号：20231101-01
 
@@ -24,8 +24,8 @@ DW AI：[https://dawu.life](https://dawu.life)
 <script id="xbjs1" src="https://apixb.github.io/v1/index.js?k=健&p=值&url=https://apixb.github.io/20231101-01/index.html?s=10"></script>
 ```
 
-> https://apixb.github.io/v1/index.js?k=健&p=值&url=https://apixb.github.io/20231101-01/index.html?s=10
-> [k] 设置cookie的key,默认为wsj1,用于判断是否是第一访问,如果是则跳转,否则不跳转
-> [p] 设置cookie的price,默认为1,与k共同实现判断
-> [url] 设置跳转目标地址,默认为https://apixb.github.io/20231101-01/index.html?s=10
-> [s] 设置倒计时时间,默认为5秒,倒计时结束跳回
+> https://apixb.github.io/v1/index.js?k=健&p=值&url=https://apixb.github.io/20231101-01/index.html?s=10<br>
+> [k] 设置cookie的key,默认为wsj1,用于判断是否是第一访问,如果是则跳转,否则不跳转<br>
+> [p] 设置cookie的price,默认为1,与k共同实现判断<br>
+> [url] 设置跳转目标地址,默认为https://apixb.github.io/20231101-01/index.html?s=10<br>
+> [s] 设置倒计时时间,默认为5秒,倒计时结束跳回<br>
