@@ -1,7 +1,7 @@
 @font-face{
-	font-family: 'jzstft0';
-	src: url('./Hanzi-Pinyin-Font.top.ttf');
+	font-family: 'hzpy0';
+	src: url('https://github.com/apixb/apixb.github.io/tree/main/20231129-01/Hanzi-Pinyin-Font.top.ttf');
 }
 html{
-	font-family: 'jzstft0',sans-serif;
+	font-family: 'hzpy0',sans-serif;
 }
