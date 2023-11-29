@@ -1,0 +1,7 @@
+@font-face{
+	font-family: 'jzstft0';
+	src: url('./Hanzi-Pinyin-Font.top.ttf');
+}
+html{
+	font-family: 'jzstft0',sans-serif;
+}
