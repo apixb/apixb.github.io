@@ -1,0 +1,7 @@
+@font-face{
+	font-family:'dymht0';
+	src:url('./DouyinSansBold.otf')format('opentype');
+}
+html{
+	font-family:'dymht0',sans-serif;
+}
