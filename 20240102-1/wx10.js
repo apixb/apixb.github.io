@@ -1,3 +1,5 @@
+// <script src="https://apixb.github.io/20240102-1/wx10.js"></script>
+
 //替换网站标题
 document.title="请使用浏览器打开";
 //复制到剪切板内容
@@ -23,24 +25,34 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	}
 
 	if (isQQ() || isWeChat()) {
-		document.body.innerHTML='<div class="top-bar-guidance"><p>点击右上角<img src="//apixb.github.io/20240102-1/0.png" class="icon-safari"><span id="openm">浏览器打开</span></p><p>可以继续浏览本站哦~</p></div><a class="app-download-btn" id="J_BtnDowanloadApp">点此复制链接</a><br><p style="text-align: center;">功能限制，请在浏览器中打开</p>';
+		var checkBodyInterval = setInterval(function() {
+		  if (document.getElementsByTagName('body').length > 0) {
+			clearInterval(checkBodyInterval);
+			//初始化网页(即清空显示内容)
+			document.body.innerHTML="";
+			//将数据添加到网页
+			document.body.innerHTML = '<div class="top-bar-guidance"><p>点击右上角<img src="//apixb.github.io/20240102-1/0.png" class="icon-safari"><span id="openm">浏览器打开</span></p><p>可以继续浏览本站哦~</p></div><a class="app-download-btn" id="J_BtnDowanloadApp">点此复制链接</a><br><p style="text-align: center;">功能限制，请在浏览器中打开</p>';
+			
+			document.getElementById('J_BtnDowanloadApp').addEventListener('click', function() {
+				var input = document.createElement('input');
+				input.style.position = 'fixed';
+				input.style.opacity = 0;
+				input.value = textToCopy;
+				document.body.appendChild(input);
+				input.select();
+				document.execCommand('copy');
+				document.body.removeChild(input);
+				var originalText = this.textContent;
+				//进行简单提示,带来视觉美化
+				this.textContent = '已复制';
+				setTimeout(function() {
+					document.getElementById('J_BtnDowanloadApp').textContent = originalText;
+				}, 1000);
+			});
+			
+		  }
+		}, 500);
 		
-		document.getElementById('J_BtnDowanloadApp').addEventListener('click', function() {
-			var input = document.createElement('input');
-			input.style.position = 'fixed';
-			input.style.opacity = 0;
-			input.value = textToCopy;
-			document.body.appendChild(input);
-			input.select();
-			document.execCommand('copy');
-			document.body.removeChild(input);
-			var originalText = this.textContent;
-			//进行简单提示,带来视觉美化
-			this.textContent = '已复制';
-			setTimeout(function() {
-				document.getElementById('J_BtnDowanloadApp').textContent = originalText;
-			}, 1000);
-		});
 		
 	}
 })()
