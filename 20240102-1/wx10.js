@@ -6,7 +6,7 @@ var textToCopy = 'wryxmq.com';
 //在head中添加css对网站进行美化
 document.addEventListener("DOMContentLoaded", function(event) {
   var style = document.createElement('style');
-  style.innerHTML = 'body,html{width:100%;height:100%} *{margin:0;padding:0} body{background-color:#fff} .top-bar-guidance{font-size:15px;color:#fff;height:70%;line-height:1.8;padding-left:20px;padding-top:20px;background:url(//apixb.github.io/20240102-1/wx10.js) center top/contain no-repeat} .top-bar-guidance .icon-safari{width:25px;height:25px;vertical-align:middle;margin:0 .2em} .app-download-btn{display:block;width:214px;height:40px;line-height:40px;margin:18px auto 0 auto;text-align:center;font-size:18px;color:#2466f4;border-radius:20px;border:.5px #2466f4 solid;text-decoration:none}';
+  style.innerHTML = 'body,html{width:100%;height:100%} *{margin:0;padding:0} body{background-color:#fff} .top-bar-guidance{font-size:15px;color:#fff;height:70%;line-height:1.8;padding-left:20px;padding-top:20px;background:url(//apixb.github.io/20240102-1/b.png) center top/contain no-repeat} .top-bar-guidance .icon-safari{width:25px;height:25px;vertical-align:middle;margin:0 .2em} .app-download-btn{display:block;width:214px;height:40px;line-height:40px;margin:18px auto 0 auto;text-align:center;font-size:18px;color:#2466f4;border-radius:20px;border:.5px #2466f4 solid;text-decoration:none}';
   document.head.appendChild(style);
 });
 
